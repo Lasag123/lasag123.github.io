@@ -38,48 +38,69 @@
 
         header {
             text-align: center;
-            padding: 4rem 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #2c5282 0%, #2b6cb0 100%);
             color: white;
             margin-bottom: 3rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 4px solid white;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            color: white;
         }
 
         .tagline {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             opacity: 0.9;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            color: white;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1rem;
+            gap: 2rem;
+            margin-top: 2rem;
         }
 
         .social-links a {
             color: white;
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
+            font-size: 2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+            opacity: 0.9;
+            background: rgba(255, 255, 255, 0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         .social-links a:hover {
             transform: translateY(-3px);
+            color: white;
+            opacity: 1;
+            border-color: white;
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .section-title {
@@ -268,14 +289,20 @@
         }
     </style>
 </head>
-<body>
-    <header>
+<body>    <header>
         <img src="https://avatars.githubusercontent.com/lasag123" alt="Profile" class="profile-img">
         <h1>Lasag</h1>
-        <p class="tagline">Software Developer & Problem Solver</p>        <div class="social-links">
-            <a href="https://github.com/lasag123" target="_blank" rel="noopener noreferrer" title="GitHub Profile" aria-label="Visit my GitHub Profile"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/lasag123" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" aria-label="Visit my LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-            <a href="https://lasag123.github.io/CV/" target="_blank" rel="noopener noreferrer" title="My CV" aria-label="View my CV"><i class="fas fa-file-alt"></i></a>
+        <p class="tagline">Software Developer & Problem Solver</p>
+        <div class="social-links">
+            <a href="https://github.com/lasag123" target="_blank" rel="noopener noreferrer" title="GitHub Profile" aria-label="Visit my GitHub Profile">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/lasag123" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" aria-label="Visit my LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://lasag123.github.io/CV/" target="_blank" rel="noopener noreferrer" title="My CV" aria-label="View my CV">
+                <i class="fas fa-file-alt"></i>
+            </a>
         </div>
     </header>
 
