@@ -176,6 +176,66 @@
             font-size: 1rem;
         }
 
+        /* Contact Section Styles */
+        .contact-section {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--secondary);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -200,6 +260,10 @@
             .repo-link {
                 width: 100%;
                 justify-content: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -266,6 +330,37 @@
             <h2 class="section-title">My Projects</h2>
             <div class="repos-grid" id="repos-container">
                 <!-- Repositories will be loaded here -->
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="section-title">Contact Me</h2>            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:lasag123@gmail.com" class="contact-link">lasag123@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/lasag123" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-github"></i> github.com/lasag123
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/lasag123" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-file-alt contact-icon"></i>
+                    <span class="contact-label">Resume/CV</span>
+                    <a href="https://lasag123.github.io/CV/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fas fa-file-alt"></i> View My CV
+                    </a>
+                </div>
             </div>
         </section>
     </main>
