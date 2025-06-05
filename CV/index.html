@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmi Subbar Reddy - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2d3436;
+            --secondary: #0984e3;
+            --text: #2d3436;
+            --bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --border: #e1e4e8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            transform: translateY(-2px);
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .education-header, .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .institution, .company {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .degree, .position {
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .duration {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-3px);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .skill-list li i {
+            color: var(--secondary);
+            width: 20px;
+            text-align: center;
+        }
+
+        .project-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .project-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                padding: 0;
+            }
+
+            .section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .education-header, .experience-header {
+                flex-direction: column;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <h1>Lakshmi Subbar Reddy</h1>
+                <p>Web Developer | Full Stack Engineer</p>
+                <div class="contact-info">
+                    <a href="mailto:lasag123@gmail.com"><i class="fas fa-envelope"></i> lasag123@gmail.com</a>
+                    <a href="tel:+918765432100"><i class="fas fa-phone"></i> +91 8765432100</a>
+                    <a href="https://github.com/lasag123" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> github.com/lasag123</a>
+                    <a href="https://linkedin.com/in/lasag123" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="institution">Jawaharlal Nehru Technological University</span>
+                        <span class="duration">2019 - 2023</span>
+                    </div>
+                    <div class="degree">B.Tech in Computer Science and Engineering</div>
+                    <p>CGPA: 7.5/10</p>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="institution">Sri Chaitanya Junior College</span>
+                        <span class="duration">2017 - 2019</span>
+                    </div>
+                    <div class="degree">Intermediate (MPC)</div>
+                    <p>Percentage: 95%</p>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="institution">Z.P. High School</span>
+                        <span class="duration">2016 - 2017</span>
+                    </div>
+                    <div class="degree">Secondary School Certificate (SSC)</div>
+                    <p>GPA: 9.8/10</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-python"></i>Python</li>
+                            <li><i class="fab fa-java"></i>Java</li>
+                            <li><i class="fab fa-js"></i>JavaScript (ES6+)</li>
+                            <li><i class="fab fa-html5"></i>HTML5 & CSS3</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-react"></i>React.js</li>
+                            <li><i class="fab fa-node-js"></i>Node.js & Express</li>
+                            <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+                            <li><i class="fas fa-database"></i>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                        <ul class="skill-list">
+                            <li><i class="fab fa-git-alt"></i>Git & GitHub</li>
+                            <li><i class="fas fa-database"></i>SQL</li>
+                            <li><i class="fas fa-terminal"></i>Command Line</li>
+                            <li><i class="fas fa-code-branch"></i>Version Control</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="position">Error Detection System</span>
+                        <span class="duration">2023</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Developed an intelligent system for detecting and analyzing errors in program files</li>
+                        <li>Implemented NLP and Machine Learning algorithms achieving 90% accuracy</li>
+                        <li>Technologies used: Python, Natural Language Processing, Machine Learning</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="position">Student Result Management System</span>
+                        <span class="duration">2022</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Built a full-stack web application for managing student academic records</li>
+                        <li>Implemented secure authentication and role-based access control</li>
+                        <li>Technologies used: MongoDB, Express.js, React.js, Node.js</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Certifications</h2>
+                <div class="experience-item">
+                    <ul class="skill-list">
+                        <li><i class="fas fa-certificate"></i>Python for Data Science - IBM</li>
+                        <li><i class="fas fa-certificate"></i>Web Development Bootcamp - Udemy</li>
+                        <li><i class="fas fa-certificate"></i>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
